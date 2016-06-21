@@ -51,6 +51,14 @@ class SiteTest extends TestCase
 
     }
 
+    public function testUserCanLogin()
+    {
+        $password = 'password';
+        $user = factory(App\User::class)->create(['password'=>$password]);
+        $response = $this->call('POST', '/api/users/signin',['email'=>$user->email,'password'=>$password]);
+        $this->assertEquals(200, $response->status());
+    }
+
     public function testGetProperties()
     {
         $response = $this->call('GET', '/api/properties');
