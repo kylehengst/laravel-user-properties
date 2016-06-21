@@ -17,7 +17,7 @@ POST ```/api/users```
 
 POST ```/api/users/signin```
 
-- Required: email, passwor
+- Required: email, password
 - Returns api_token
 
 GET ```/api/properties```
