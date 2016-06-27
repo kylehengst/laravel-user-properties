@@ -1,4 +1,4 @@
-# Cyber-Duck User Properties
+# User Properties
 
 - Create your database
 - Create ```.env``` file
